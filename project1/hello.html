@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">    <!--this is a bootstrap link-->
+    <link rel="stylesheet" href="style.css">           <!--this is connecting css and html-->
+    <title>Javascrript on Steroids</title>
+</head>
+<body>
+    <div class="container-1">                     <!--divs are different containers or modules that help in styling*-->
+         <h2>Challenge 1: Your Age in Days</h2>
+         <div class="flex-box-container-1">         <!--so inside this flexbox all the div will be there differentiating one from other-->
+                <div>
+                    <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+                </div>
+
+                <div>
+                    <button class="btn btn-danger" onclick="reset()">Reset</button>
+                </div>
+         </div>
+
+         <div class="flex-box-container-1">
+
+             <div id="flex-box-result"></div>
+
+         </div>  
+    </div>
+
+
+    <!-- FROM HERE PROJECT 2 WILL START -->
+    <!-- CHALLENGE 2 - CAT GENERATOR -->
+
+    <div class="container-2">
+            <h2>Challenge 2: Cat Generator </h2>
+            <button class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+            <div class='flex-box-container-2' id="flex-cat-generator"></div>
+    </div>
+
+
+    <!-- FROM HERE PROJECT 3 WILL START -->
+    <!-- CHALLENGE 3 - ROCK,PAPER, SCISSORS -->
+    <div class="container-3">
+        <h2>Challenge 3:rock,paper,scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">    <!-- //creating an flex box container inside the container div-->
+            <!-- creating image tags and giving src to that images and specifying its id -->
+            <img id='rock'src='rock.png' height=150 width=150 onclick="rpsGame(this)">    <!-- here 'this' keyword is a part of oops concept  -->        
+            <img  id ='paper'src='paper.png' height=150 width=150 onclick="rpsGame(this)">
+            <img  id='scissors'src="scissors.png" height=150 width=150 onclick="rpsGame(this)">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FROM HERE PROJECT 4 WILL START -->
+    <!-- CHALLENGE 4 - CHANGING THE COLOURS -->
+    <div class='container-4'>
+        <h2>Challenge 4:-change the colours of all the buttons</h2>
+        <div class='flex-box-pick-color'>
+            <form action=''>
+                <select name='backdrop' id='background' onchange='buttonColorChange(this)'>        <!-- one of the functionallities of html this basically creates a drop down menu on the page -->
+                   <option value="random">Random</option>                                    <!-- above onchange is same as onclick  -->
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class='btn btn-primary'> Wee!</button>
+            <button class='btn btn-danger'> Yahoo!</button>
+            <button class='btn btn-warning'> Google</button>
+            <button class='btn btn-success'> Facebook</button>
+        </div>
+    </div>
+
+    <script src='p1.js'></script>
+</body>
+</html>

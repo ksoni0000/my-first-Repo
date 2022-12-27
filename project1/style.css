@@ -1,0 +1,49 @@
+.container-1,.container-3,.container-4{
+    border:1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex-box-container-1,.flex-box-rps,.flex-box-pick-color {                    /*this is making changes that will be aplicable through out the container*/
+    display:flex;
+    border :2px solid black;
+    padding:10px;                           /*all these*/
+    flex-wrap: wrap;                         /*are*/
+    justify-content: space-around;           /*tools in*/ 
+    align-items: center;                     /*css*/
+    flex-direction: row;
+}
+
+.flex-box-container-1 div{                     /* what this is doing is that making changes that will be aplicable in all the div    */
+    display: flex;
+    padding:10px;                                /* in that particular container */   
+    border : 1px solid black;
+}
+
+.container-2{
+    border:1px solid rgb(180, 10, 10);               /*this gives the border to the container */
+    text-align: center;                /*puts the text in the center of the page */
+    width: 75%;                        /*what this does is that it specifies the amount of width of the page to be occupied so the container will occupy only 75% of the width */ 
+    margin: 0 auto;                    /*what this does is that it centers the entire container leaving equal space on either sides*/
+}
+
+.flex-box-container-2{
+    display: flex;          /*what this does is that it activates a div to become a flexbox and then any item put inside it becomes a flex item */ 
+    border:1px solid blue;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.flex-box-container-2 img{
+    padding: 10px; 
+}
+
+
+
+/*from here on project 3 starts*/
+
+
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}

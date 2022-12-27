@@ -1,0 +1,20 @@
+.container-1{
+    border:1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex-box-rps{                    /*this is making changes that will be aplicable through out the container*/
+    display:flex;
+    border :2px solid black;
+    padding:10px;                           /*all these*/
+    flex-wrap: wrap;                         /*are*/
+    justify-content: space-around;           /*tools in*/ 
+    align-items: center;                     /*css*/
+    flex-direction: row;
+}
+
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
